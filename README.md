@@ -11,3 +11,4 @@ FIR 필터 설계
   - `DelayChain.v`, `SpSram.v`, `AccessMux.v` – 지연 체인 및 메모리 접근
 - `Testbench/` – 테스트벤치
   - `tb_ReConf_FirFilter.v`
+- `Reconfigurable FIR filter_이정우_박도유_이다정.pdf` – 설계 보고서
