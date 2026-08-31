@@ -2,6 +2,14 @@
 
 FIR 필터 설계
 
+##목표
+본 프로젝트는 디지털 통신 시스템에서 핵심적인 역할을 하는 FIR(Finite Impulse Response)Filter를 FPGA상에서 동작 가능한 하드웨어로 설계하는 것을 목표로 합니다.
+
+1) : 600kHz Sampling Rate 200kHz Symbol Rate , 4개의 병렬 구조로 처리 제한 시간내에 연산을 MAC Sample (20clock) 33-Tap 완료한다.
+2) (Reconfigurability): ROM SpSram , 
+하드웨어 변경 없이 필터 특성을 실시간으로 업데이트할 수 있도록 한다.
+병렬 구조 최적화개의 과 을 활용한 병렬 처리 3) : 4 MAC Unit 4-Bank SRAM
+구조를 통해 연산 효율을 극대화한다.
 ## 폴더 구성
 
 - `DUT/` – Reconfigurable FIR Filter Verilog 소스
